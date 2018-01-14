@@ -1,6 +1,5 @@
 #!/bin/bash
-
-#cron7 - kaczka sql
+#cron-sql-nazwa.pl
 
 DATE=`date +%d-%m-%Y`
 
@@ -28,6 +27,5 @@ LENNAME=${#TAB[@]}
         K=$[K+2]
         Q=$[Q+2]
 	done
-
 
 sendEmail -f [Email] -t [Email] -u Cron -m Cron sql zakonczyl dzialanie -s [Email]:587 -xu [Email] -xp [Pass]
