@@ -3,7 +3,6 @@
 
 DATE=`date +%d-%m-%Y`
 
-
 if [ ! -d "[Path]/$DATE" ];
         then mkdir [Path]/$DATE
 fi
